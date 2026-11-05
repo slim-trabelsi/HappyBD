@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 21st Birthday, Palangga! 🎂💖 (Tunisia ✈️ Cebu)</title>
+  
+  <!-- Romantic Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Static Twinkling Starlight Background Overlay -->
+  <div class="stars-overlay"></div>
+
+  <!-- ========================================================
+       WELCOME MORNING GATE (Plays Birthday Song Immediately!)
+       ======================================================== -->
+  <div class="welcome-gate" id="welcomeGate">
+    <div class="welcome-box">
+      <div class="welcome-sun">☀️</div>
+      <div class="welcome-pill">✨ Mata na, <span class="dynamic-nickname">Langga</span>! ✨</div>
+      <h2>Happy 21st Birthday, Palangga! 🎂</h2>
+      <p>A special birthday surprise sent all the way from Tunisia to Cebu just for you...</p>
+      <button class="btn btn-primary welcome-btn" id="enterSiteBtn">
+        <span>🎁 Open Birthday Surprise &amp; Play Song 🎶</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating Audio Player Widget -->
+  <div class="audio-widget" id="musicToggleBtn" title="Click to play or pause Happy Birthday melody">
+    <div class="vinyl-record" id="vinylRecord">
+      <div class="vinyl-center"></div>
+    </div>
+    <div class="audio-label">
+      <span class="audio-title">Birthday Song</span>
+      <span id="audioStatusText" style="font-size: 0.75rem; color: #ff8fa3;">Play Song 🎵</span>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       HERO SECTION: Morning Birthday Wake-Up Greeting
+       ======================================================== -->
+  <header class="hero" id="top">
+    <div class="container">
+      <!-- LDR Flight Badge -->
+      <div class="distance-pill" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 215, 0, 0.4); padding: 6px 18px; border-radius: 50px; font-size: 0.88rem; color: #ffd700; margin-bottom: 14px;">
+        <span>Tunisia 🇹🇳</span>
+        <span>✈️ 10,000+ km ✈️</span>
+        <span>Cebu, Philippines 🇵🇭</span>
+      </div>
+
+      <div class="greeting-pill">
+        <span>✨ Good morning &amp; Mata na, <span class="dynamic-nickname">Langga</span>! ✨</span>
+      </div>
+
+      <h1 class="hero-title">
+        Happy 21st Birthday,<br>
+        <span class="dynamic-gf-name">My Beautiful Palangga</span>
+        <span class="milestone-badge">Malipayong ika-21 nga Adlawng Natawhan! 👑</span>
+      </h1>
+
+      <p class="cebuano-tagline">
+        "Across oceans and time zones, you are my favorite notification and my whole heart."
+      </p>
+
+      <div class="hero-actions">
+        <a href="#cake-section" class="btn btn-primary">
+          <span>Make a Wish &amp; Blow Candles 🎂</span>
+        </a>
+        <a href="#letter-section" class="btn btn-secondary">
+          <span>Open Your Birthday Letter 💌</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="#cake-section" class="scroll-indicator">
+      <span>Scroll for surprises</span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+      </svg>
+    </a>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         SECTION 1: Virtual Birthday Cake & 21 Candles
+         ======================================================== -->
+    <section class="section" id="cake-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">21 Golden Years</span>
+          <h2 class="section-title">Blow Out Your Candles &amp; Make a Wish 🎂</h2>
+          <p class="section-desc">You are officially 21 today! Close your eyes, make the sweetest wish in your heart, and blow out the candles across the miles.</p>
+        </div>
+
+        <div class="cake-stage" id="cakeStage">
+          <div class="cake-wrapper">
+            <div class="candles-row" id="candlesRow">
+              <!-- Candles injected via JS -->
+            </div>
+            <div class="cake-tier tier-top">
+              <div class="frosting-drips"></div>
+            </div>
+            <div class="cake-tier tier-middle">
+              <div class="frosting-drips"></div>
+            </div>
+            <div class="cake-tier tier-bottom">
+              <div class="frosting-drips"></div>
+            </div>
+            <div class="cake-plate"></div>
+          </div>
+
+          <div class="cake-msg-box" style="text-align: center; margin-top: 15px;">
+            <button class="btn btn-primary" id="blowCandlesBtn">
+              <span>💨 Blow Out All Candles!</span>
+            </button>
+
+            <!-- Card revealed when candles are blown -->
+            <div class="wish-unlocked-card" id="wishUnlockedCard">
+              <h3>✨ May All Your Dreams Come True, <span class="dynamic-nickname">Langga</span>! ✨</h3>
+              <p>May your 21st year bring you endless happiness, good health, and success. Even with 10,000 kilometers between Tunisia and Cebu, I promise to spend every day loving you until the moment we finally meet and hold each other tight. 💖</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 2: Secret Gift Box & Wax Sealed Love Letter
+         ======================================================== -->
+    <section class="section" id="letter-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Direct From Tunisia to Cebu</span>
+          <h2 class="section-title">A Special Birthday Gift For You 🎁</h2>
+          <p class="section-desc">I put my whole heart inside this box. Click on the gift to unwrap your personal birthday love letter.</p>
+        </div>
+
+        <div class="gift-vault-stage">
+          <div class="gift-box-interactive" id="giftBoxInteractive" title="Click to unwrap your letter!">
+            <div class="gift-box-lid">
+              <div class="gift-bow"></div>
+              <div class="gift-ribbon-vertical" style="top:0; height:100%;"></div>
+            </div>
+            <div class="gift-box-base">
+              <div class="gift-ribbon-vertical"></div>
+              <div class="gift-ribbon-horizontal"></div>
+            </div>
+          </div>
+          <p class="gift-instructions">✨ Tap the gift box to open your letter ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Love Letter Modal Backdrop -->
+    <div class="letter-modal-backdrop" id="letterModal">
+      <div class="vintage-letter-container">
+        <div class="wax-seal" title="Sealed with pure love">💖</div>
+        <button class="close-letter-btn" id="closeLetterBtn" aria-label="Close letter">&times;</button>
+        
+        <div class="letter-header">
+          <div class="letter-title">Para Sa Akong Pinangga</div>
+          <div class="letter-date">Happy 21st Birthday &bull; From Tunisia with All My Heart</div>
+        </div>
+
+        <div class="letter-content" id="letterBodyText">
+          <!-- Text loaded cleanly from customize.js without any underscores -->
+        </div>
+
+        <div class="letter-footer">
+          With all my love &bull; Nahigugma kanunay,<br>
+          <span class="dynamic-bf-name">Your Boyfriend</span> 🌹
+        </div>
+
+        <div class="letter-actions">
+          <button class="btn btn-primary" id="downloadLetterBtn">
+            <span>Save Letter 💾</span>
+          </button>
+          <button class="btn btn-secondary" id="closeLetterBtnBottom">
+            <span>Close With A Kiss 💋</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         SECTION 3: 21 Reasons Why I Love You
+         ======================================================== -->
+    <section class="section" id="reasons-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">21 Milestone Special</span>
+          <h2 class="section-title">21 Reasons Why I Love You 💖</h2>
+          <p class="section-desc">One special reason for every year of your life, celebrating our bond across the miles. Click each card to uncover it.</p>
+        </div>
+
+        <div class="reasons-stats">
+          <div class="progress-pill">
+            <span>Reasons Discovered: </span>
+            <span id="reasonsCounter">0 / 21</span>
+          </div>
+        </div>
+
+        <div class="reasons-grid" id="reasonsGrid">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 4: Kilig Meter & Mini-Quiz
+         ======================================================== -->
+    <section class="section" id="fun-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Playful &amp; Sweet</span>
+          <h2 class="section-title">The "Kilig" Meter &amp; Mini-Quiz 🥰</h2>
+          <p class="section-desc">Little interactive moments designed to put a sweet smile on your face in Cebu.</p>
+        </div>
+
+        <div class="fun-container">
+          <!-- Kilig Meter -->
+          <div class="fun-card">
+            <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 8px;">💖 The Long-Distance Love Gauge</h3>
+            <p style="font-size: 0.9rem; color: #ffb3c6; margin-bottom: 18px;">Slide to measure how much he loves you across 10,000 km today:</p>
+            
+            <div class="meter-display">
+              <div class="meter-percentage" id="meterVal">100%</div>
+              <div class="meter-status" id="meterStatus">Drag the slider to test! 💕</div>
+            </div>
+
+            <input type="range" min="0" max="100" value="70" class="love-slider" id="loveSlider">
+          </div>
+
+          <!-- Playful Quiz -->
+          <div class="fun-card">
+            <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 8px;">🤔 Quick Birthday Check</h3>
+            
+            <div class="quiz-q-1" style="margin-bottom: 22px;">
+              <p class="quiz-q">1. Who is the most breathtaking 21-year-old girl in the whole universe?</p>
+              <div class="quiz-options">
+                <button class="quiz-btn"><span>A) <span class="dynamic-gf-name">You</span> in Cebu</span> <span>✨</span></button>
+                <button class="quiz-btn"><span>B) Definitely <span class="dynamic-gf-name">You</span></span> <span>👑</span></button>
+                <button class="quiz-btn"><span>C) The sweet girl reading this right now!</span> <span>💖</span></button>
+              </div>
+              <div class="quiz-feedback" id="quizFeedback1"></div>
+            </div>
+
+            <div class="quiz-q-2">
+              <p class="quiz-q">2. Will you wait and hold on until the day we finally meet?</p>
+              <div class="quiz-options" style="display: flex; flex-direction: row; gap: 14px; position: relative; min-height: 48px;">
+                <button class="btn btn-primary" id="stayBtn" style="flex: 1;">Yes, forever and always! 🥰</button>
+                <button class="btn btn-secondary" id="runawayBtn" style="flex: 1;">No way 😜</button>
+              </div>
+              <div class="quiz-feedback" id="quizFeedback2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       FLOATING LOVE CONTROLS DOCK
+       ======================================================== -->
+  <aside class="love-dock" aria-label="Interactive Love Actions">
+    <button class="dock-btn" id="dockKissBtn" title="Send Kisses Across the Miles">
+      💋 <span>Kisses</span>
+    </button>
+    <button class="dock-btn" id="dockHugBtn" title="Send a Tight Warm Hug">
+      🫂 <span>Virtual Hug</span>
+    </button>
+    <button class="dock-btn" id="dockConfettiBtn" title="Celebrate with Confetti">
+      🎉 <span>Celebrate</span>
+    </button>
+    <button class="dock-btn" id="dockLetterBtn" title="Read Birthday Letter">
+      💌 <span>Love Letter</span>
+    </button>
+  </aside>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-heart">💖</div>
+      <p class="footer-msg">
+        "Distance is just a test to see how far love can travel."
+      </p>
+      <p class="footer-sub">
+        Tunisia 🇹🇳 to Cebu 🇵🇭 &bull; Crafted with all my love for your 21st Birthday &bull; <span class="dynamic-bf-name">Your Boyfriend</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="customize.js"></script>
+  <script src="audio-player.js"></script>
+  <script src="confetti.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
